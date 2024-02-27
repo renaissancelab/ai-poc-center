@@ -1,0 +1,156 @@
+Invocation context: tenant_id=None user_id=None workspace_id=None invocable_handle=None invocable_version_handle=None invocable_instance_handle=None invocable_type=None invocable_owner_id=None invocable_url='https://a429-172-81-126-173.ngrok-free.app/' invocable_owner_handle=None workspace_handle=None
+[Client] Creating/Fetching workspace with handle/id: default/4D4E7F2C-3636-44BE-AF68-808AA0468C3C.
+[Client] Switched to workspace default/4D4E7F2C-3636-44BE-AF68-808AA0468C3C
+Client received error from server: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+Client received error from server: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+steamship.base.error.SteamshipError: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+[LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/invocable/lambda_handler.py", line 79, in internal_handler
+    invocable = invocable_cls_func()(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "api.py", line 86, in __init__
+    llm=ChatOpenAI(self.client, model_name=model_name, temperature=TEMPERATURE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/agents/llms/openai.py", line 74, in __init__
+    super().__init__(client=client, model_name=model_name, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/agents/llms/openai.py", line 37, in __init__
+    generator = client.use_plugin(
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/client/steamship.py", line 311, in _instance_use_plugin
+    result = PluginInstance.create(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/data/plugin/plugin_instance.py", line 94, in create
+    return client.post("plugin/instance/create", payload=req, expect=PluginInstance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/base/client.py", line 571, in post
+    return self.call(
+           ^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/base/client.py", line 529, in call
+    raise error
+steamship.base.error.SteamshipError: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+steamship.invocable.response - Response created with error.
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/invocable/lambda_handler.py", line 79, in internal_handler
+    invocable = invocable_cls_func()(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "api.py", line 86, in __init__
+    llm=ChatOpenAI(self.client, model_name=model_name, temperature=TEMPERATURE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/agents/llms/openai.py", line 74, in __init__
+    super().__init__(client=client, model_name=model_name, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/agents/llms/openai.py", line 37, in __init__
+    generator = client.use_plugin(
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/client/steamship.py", line 311, in _instance_use_plugin
+    result = PluginInstance.create(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/data/plugin/plugin_instance.py", line 94, in create
+    return client.post("plugin/instance/create", payload=req, expect=PluginInstance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/base/client.py", line 571, in post
+    return self.call(
+           ^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/base/client.py", line 529, in call
+    raise error
+steamship.base.error.SteamshipError: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+Response data size 37
+Local server running.
+Local server address: http://localhost:8443
+Starting web interface. web_base=https://steamship.com/ and base_url=https://a429-172-81-126-173.ngrok-free.app
+Web interface url is: https://steamship.com/debug?endpoint=https://a429-172-81-126-173.ngrok-free.app/prompt
+[Client] Creating/Fetching workspace with handle/id: default/None.
+[Client] Switched to workspace default/4D4E7F2C-3636-44BE-AF68-808AA0468C3C
+[Client] Creating/Fetching workspace with handle/id: mucho-sun-hk0am/None.
+[Client] Switched to workspace mucho-sun-hk0am/0F5621BF-4B7B-4598-89D6-2D0F855C99FA
+POST request,
+Path: /prompt
+Headers:
+Host: localhost:8443
+User-Agent: python-requests/2.28.2
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Type: application/json
+Authorization: Bearer F19B06C4-DCDD-4D0E-A892-04A33D43E352
+Content-Length: 70
+
+
+
+[Client] Creating/Fetching workspace with handle/id: default/None.
+[Client] Switched to workspace default/4D4E7F2C-3636-44BE-AF68-808AA0468C3C
+Invocation context: tenant_id=None user_id='7704EBF2-A24F-4A4B-96AD-DFAE8779B80F' workspace_id='4D4E7F2C-3636-44BE-AF68-808AA0468C3C' invocable_handle='super-ai-angle-bot' invocable_version_handle='2.2.3-rc.3' invocable_instance_handle=None invocable_type='package' invocable_owner_id='7704EBF2-A24F-4A4B-96AD-DFAE8779B80F' invocable_url='https://a429-172-81-126-173.ngrok-free.app/' invocable_owner_handle='wangpeipei0613' workspace_handle='default'
+[Client] Creating/Fetching workspace with handle/id: default/4D4E7F2C-3636-44BE-AF68-808AA0468C3C.
+[Client] Switched to workspace default/4D4E7F2C-3636-44BE-AF68-808AA0468C3C
+Client received error from server: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+Client received error from server: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+steamship.base.error.SteamshipError: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+[LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/invocable/lambda_handler.py", line 79, in internal_handler
+    invocable = invocable_cls_func()(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "api.py", line 86, in __init__
+    llm=ChatOpenAI(self.client, model_name=model_name, temperature=TEMPERATURE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/agents/llms/openai.py", line 74, in __init__
+    super().__init__(client=client, model_name=model_name, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/agents/llms/openai.py", line 37, in __init__
+    generator = client.use_plugin(
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/client/steamship.py", line 311, in _instance_use_plugin
+    result = PluginInstance.create(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/data/plugin/plugin_instance.py", line 94, in create
+    return client.post("plugin/instance/create", payload=req, expect=PluginInstance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/base/client.py", line 571, in post
+    return self.call(
+           ^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/base/client.py", line 529, in call
+    raise error
+steamship.base.error.SteamshipError: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+steamship.invocable.response - Response created with error.
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/invocable/lambda_handler.py", line 79, in internal_handler
+    invocable = invocable_cls_func()(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "api.py", line 86, in __init__
+    llm=ChatOpenAI(self.client, model_name=model_name, temperature=TEMPERATURE),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/agents/llms/openai.py", line 74, in __init__
+    super().__init__(client=client, model_name=model_name, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/agents/llms/openai.py", line 37, in __init__
+    generator = client.use_plugin(
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/client/steamship.py", line 311, in _instance_use_plugin
+    result = PluginInstance.create(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/data/plugin/plugin_instance.py", line 94, in create
+    return client.post("plugin/instance/create", payload=req, expect=PluginInstance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/base/client.py", line 571, in post
+    return self.call(
+           ^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/steamship/base/client.py", line 529, in call
+    raise error
+steamship.base.error.SteamshipError: [LimitReached]
+You have reached the preview usage limit. Please sign up for a plan at https://steamship.com/account/plan to continue.
+Response data size 37
+Response failed with remote error: No message
+Local server shutting down.
+t=2024-02-26T18:56:28+0800 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2024-02-26T18:56:28+0800 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2024-02-26T18:56:28+0800 lvl=info msg="accept failed" obj=tunnels.session obj=csess id=124c42675592 err="reconnecting session closed"
+Local server shut down complete.

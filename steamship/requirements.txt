@@ -1,0 +1,4 @@
+steamship@git+https://github.com/steamship-core/python-client@ec/add-importer-tags
+langchain==0.0.200
+scrapetube
+pytube
